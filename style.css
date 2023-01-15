@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+html, body {
+    min-height: 100vh; 
+    background-color: rgb(92, 92, 92);
+    font-family: var(--font1);
+}
+
+
+
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font2);
+    font-size: 10vw; /*10% da viewheight*/
+    font-variant: small-caps;   /*text-transform: uppercase; para deixar as letras maiúsculas*/
+    padding-top: 50px;
+
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+
+
+section {
+    font-family: var(--font3);
+    font-size: 3.5vw;
+    line-height: 2em; /*espaçamento entre as linhas*/
+    padding-top: 10vh; /* espaçamento de 10% da altura da tela na box (em cima)*/
+    padding-bottom: 10vh; /* espaçamento de 10% da altura da tela na box (em baixo)*/
+    padding-left: 30px; /*espaçamento no lado esquerdo da tela*/
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(65, 65, 65);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.480);
+    background-size: cover; /*faz a imagem ocupar a tela inteira sem cortes*/
+    background-attachment: fixed; /*fixa a imagem no fundo, criando o efeito parallax*/
+}
+
+section.imagem > p {
+    display: inline-block; /*transformar em uma box que se adapta ao tamanho do conteúdo*/
+    padding: 5px; /*pra box não ficar tão colada no conteúdo*/
+    background-color: rgba(0, 0, 0, 0.418);
+    text-shadow: 1px 1px black;
+    
+}
+
+section#img1 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img2 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
